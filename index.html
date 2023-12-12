@@ -45,6 +45,10 @@
     </div><!-- end loader -->
     <!-- END LOADER -->
 	
+	<!-- Audio -->
+
+	<audio src="audio/audio.mp3"></audio>
+
 	<!-- Start header -->
 	<header class="top-header">
 		<nav class="navbar header-nav navbar-expand-lg">
@@ -76,8 +80,8 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="pogoSlider" id="js-main-slider">
-					<div class="pogoSlider-slide" style="background-image:url(images/slider-01.jpg);"></div>
-					<div class="pogoSlider-slide" style="background-image:url(images/slider-01.jpg);"></div>
+					<div class="pogoSlider-slide" style="background-image:url(images/slider_01.png);"></div>
+					<div class="pogoSlider-slide" style="background-image:url(images/slider_02.png);"></div>
 				</div><!-- .pogoSlider -->
 			</div>
 		</div>
@@ -106,9 +110,11 @@
 							</div>
 
                               <div class="col-lg-6 col-md-6 col-sm-12">
-								<h2><img style="width: 60px;" src="images/head_s.png" alt="#" /> Harry Mike Wishes</h2>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown..</p>
-								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.</p>
+								<h2><img style="width: 60px;" src="images/head_s.png" alt="#" /> Santa Grok's Wishes</h2>
+								<p style="text-align: justify;">In the virtual realm of cryptocurrencies, Santa Grok emerged as a festive beacon, blending the spirit of Christmas with the decentralized world. Born from the desire to spread joy through blockchain, the project's team, fueled by passion for Xmas gifting, crafted a coin that transcends traditional presents. </p>
+
+								<p style="text-align: justify;">Santa Grok's journey began when a group of visionary minds, inspired by the enchantment of the holiday season, decided to create a digital currency that embodies the joy of giving. With the slogan "Your Xmas gift is here," they aimed to revolutionize the way people express generosity during the festive season.</p>
+								<!-- <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.</p> -->
 								<a href="#" class="hvr-radial-out button-theme">Read More</a>
 							</div>
 
@@ -459,5 +465,14 @@
 	<script src="js/isotope.min.js"></script>	
 	<script src="js/images-loded.min.js"></script>	
     <script src="js/custom.js"></script>
+
+	<!-- The audio file -->
+	<script defer>
+		window.addEventListener("DOMContentLoaded", event => {
+		const audio = document.querySelector("audio");
+		audio.volume = 0.15;
+		audio.play();
+		});
+	</script>
 </body>
 </html>
